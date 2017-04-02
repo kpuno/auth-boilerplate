@@ -23,7 +23,6 @@ const localLogin = new LocalStrategy(localOptions, function(email, password, don
 			return done(null, user);
 		})
 	});
-
 });
 
 // Setup options for JWT Strategy
