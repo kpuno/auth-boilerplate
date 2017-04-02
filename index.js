@@ -7,6 +7,7 @@ const app = express();
 const router = require('./router');
 const mongoose = require('mongoose');
 const cors = require('cors');
+<<<<<<< HEAD
 const favicon = require('serve-favicon');
 
 // DB Setup
@@ -14,6 +15,12 @@ mongoose.connect(process.env.URI || 'mongodb://user:12345@ds141950.mlab.com:4195
 
 // favicon
 app.use(favicon(__dirname + '/favicon.ico'));
+=======
+
+// DB Setup
+// 'mongodb://user:12345@ds141950.mlab.com:41950/what-to-cook'
+mongoose.connect(process.env.URI || 'mongodb://user:12345@ds141950.mlab.com:41950/what-to-cook');
+>>>>>>> 763de07eecc556a3a2047f580bd3df49b37b4f57
 
 // App Setup
 app.use(morgan('combined'));
