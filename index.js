@@ -17,7 +17,7 @@ app.use(favicon(__dirname + '/favicon.ico'));
 
 // DB Setup
 // 'mongodb://user:12345@ds141950.mlab.com:41950/what-to-cook'
-mongoose.connect(process.env.URI || 'mongodb://user:12345@ds141950.mlab.com:41950/what-to-cook');
+// mongoose.connect(process.env.URI || 'mongodb://user:12345@ds141950.mlab.com:41950/what-to-cook');
 
 // App Setup
 app.use(morgan('combined'));
