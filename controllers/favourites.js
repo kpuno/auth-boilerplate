@@ -1,5 +1,5 @@
 const User = require('../models/user');
-const config = require('./config');
+// const config = require('./config');
 
 exports.addFavourite = function (req, res, next) {
 
